@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Twitter: Using Analytics to Innovate</title>
+
+		<meta name="description" content="Presentation on how Twitter uses analytics to drive a culture of innovation at their company.">
+		<meta name="author" content="Kyle Suess">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <meta property="og:title" content="Twitter: Using Analytics to Innovate" />
+        <meta property="og:site_name" content="kylesuess.com" />
+        <meta property="og:image" content="https://g.twimg.com/Twitter_logo_blue.png" />
+        <meta property="og:type" content="presentation" />
+        <meta property="og:url" content="http://kylesuess.com/presentations/twitter.html" />
+
+        <meta name="twitter:card" content="summary_large_image">
+	    <meta name="twitter:site" content="@therealdrsuess">
+	    <meta name="twitter:title" content="Twitter: Using Analytics to Innovate">
+	    <meta name="twitter:description" content="Presentation on Twitter as an innovative company and their use of analytics in innovation.">
+	    <meta name="twitter:image" content="https://g.twimg.com/Twitter_logo_blue.png">
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic" rel="stylesheet" type="text/css" data-application-font="opensans">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-62178384-1', 'auto');
+  ga('send', 'pageview');
+        </script>
+	</head>
+
+	<body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- add section within section for vertical slides -->
+
+                <section data-background="bridgefogweb.jpg">
+                    <i class="fa fa-twitter fa-5x" style="color:rgba(0,129,195,1.0);"></i>
+                    <h3>Twitter: Using Analytics to Innovate</h3>
+                    <br/>
+                    <p style="padding-top:150px;">&nbsp;</p>
+                    <div style="font-size:medium;">
+                        <p>University of Maryland, Marketing Analytics</p>
+                        <p>Lina Yang, Kevin Yang, Kyle Suess</p>
+                        <p>5 May 2015</p>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                    <h2>Why Twitter?</h2>
+                        <p style="padding-top:20px;padding-bottom:20px;">Let's see what Co-Founder Jack Dorsey has to say about it.</p>
+                        <iframe class="fragment fade-in" width="853" height="480" src="https://www.youtube.com/embed/4mwbVQFFMCs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                    <h3>Visualizing 6.3 Billion Tweets</h3>
+                        <iframe width="100%" height="600px" frameBorder="0" src="https://a.tiles.mapbox.com/v4/enf.c3a2de35.html?access_token=pk.eyJ1IjoiZW5mIiwiYSI6IkNJek92bnMifQ.xn2_Uj9RkYTGRuCGg4DXZQ"></iframe>
+                    </section>
+                </section>
+
+                <section>
+                   <h3>Beyond Just a Social Media Platform</h3>
+                    <a class="btn btn-default" href="https://engineering.twitter.com/" alt="Twitter Engineering" target="_blank"><i class="fa fa-cubes"></i> Twitter Engineering</a>
+                    <div class="fragment fade-in container-fluid" data-fragment-index="1" style="padding-top:35px;">
+                        <div class="row">
+                            <div class="col-md-4" style="padding:10px;">
+                                <a class="btn btn-default" href="https://engineering.twitter.com/university" alt="Twitter University" target="_blank"><i class="fa fa-university"></i><br/>University</a>
+                                <ul class="fragment fade-in" data-fragment-index="2" style="font-size:medium;">
+                                    <li>Lots of cool videos to help students out with projects related to Twitter</li>
+                                    <br/>
+                                    <li>Tutorials on best practices related to Twitter data science and analysis</li>
+                                    <br/>
+                                    <li>Occassional lecture events hosted at campuses nationwide</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4" style="padding:10px;">
+                                <a class="btn btn-default" href="https://engineering.twitter.com/opensource" alt="Twitter Open Source" target="_blank"><i class="fa fa-code-fork"></i><br/>Open Source</a>
+                                <ul class="fragment fade-in" data-fragment-index="3" style="font-size:medium;">
+                                    <li>Twitter very actively publishes and pursues open source projects on GitHub</li>
+                                    <br/>
+                                    <li>Many useful web projects originated from Twitter: Bootstrap, Bower, Typeahead, Ambrose (for Hadoop visualizations)</li>
+                                    <br/>
+                                    <li>Some of Twitter's open source projects now seen as "standards"</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4" style="padding:10px;">
+                                <a class="btn btn-default" href="https://engineering.twitter.com/research" alt="Twitter Research" target="_blank"><i class="fa fa-book"></i><br/>Research</a>
+                                <ul class="fragment fade-in" data-fragment-index="4" style="font-size:medium;">
+                                    <li>Academic papers on topics such as: Machine Learning at Twitter, Anomaly Detection, Churn in Tweets and real-time search queries, Distilling Twitter data in visualizations</li>
+                                    <br/>
+                                    <li>Twitter features publications on it's website for the community to view</li>
+                                    <br/>
+                                    <li>Heavy academic focus on: Information Retrieval, Data Visualization, Data Mining, and Data Science</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Twitter: Analytics to Drive Innovation</h3>
+                        <img src="http://www.firebellymarketing.com/wp-content/uploads/2014/07/twitter-analytics.jpg" alt="Twitter Analytics" />
+                    </section>
+                    <section>
+                        <h3>"How can we connect people with the world around them?"</h3>
+                        <ul class="list-unstyled fa-ul" style="padding-top:25px;list-style-type:none;">
+                            <li><i class="fa-li fa fa-users fa-lg"></i>What do our users post? Text, Video, Images, Links?</li>
+                            <br/>
+                            <li><i class="fa-li fa fa-file fa-lg"></i>What content are they seeing? Sponsored, Original, Retweeted?</li>
+                            <br/>
+                            <li><i class="fa-li fa fa-link fa-lg"></i>What relationships exist between these entities?</li>
+                        </ul>
+                        <p class="fragment fade-in" style="padding-top:25px;color:#2a78de;">To understand and answer these questions we need advanced analytics (and an appreciation for machine learning).</p>
+                    </section>
+                    <section>
+                        <h3>"But what about user interests?"</h3>
+                        <p class="fragment fade-in" style="padding-top:25px;" data-fragment-index="1">This is an even harder (more abstract) problem to solve.</p>
+                        <ul class="fragment fade-in" style="padding-top:19px;" data-fragment-index="2">
+                            <li><span style="color:#2a78de;">What</span> are users are interested in right now? </li>
+                            <li><span style="color:#2a78de;">What</span> if their interests fade or change? </li>
+                            <li><span style="color:#2a78de;">How</span> does that change our recommendation engine and the way we display content? </li>
+                            <li><span style="color:#2a78de;">How</span> do we maintain a consistent user experience fitting to a person's interests? </li>
+                            <li><span style="color:#2a78de;">How</span> do we ensure quality content (no obtrusive spam)?</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3><i class="fa fa-rocket"></i>&nbsp;&nbsp;Data Science: Boosting Development</h3>
+                        <p class="fragment fade-in" style="padding-top:25px;text-align:left;" data-fragment-index="1"><span style="font-weight:bold;">Semantic Analysis</span>&nbsp;&rarr;&nbsp;The way people talk and what their speech means. An important subset of Natural Language Processing. If you know the context surrounding a statement, you can interpret it better and make better inferences.</p>
+                        <p class="fragment fade-in" style="padding-top:15px;text-align:left;color:#2a78de;" data-fragment-index="2">ex. "too much turkey today. im so full of it and sleepy"</p>
+                        <p class="fragment fade-in" style="padding-top:10px;text-align:left;" data-fragment-index="2">What does this mean?</p>
+                        <ul class="fragment fade-in" style="padding-top:10px;text-align:left;" data-fragment-index="2">
+                            <li>A: You had a bad trip in Turkey</li>
+                            <li>B: You are overstuffed from Thanksgiving</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3><i class="fa fa-rocket"></i>&nbsp;&nbsp;Data Science: Boosting Development</h3>
+                        <div class="container-fluid" style="padding-top:10px;">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="http://www.dataweave.in/img/xmen_sentiment.png" alt="Xmen Twitter Sentiment" width="320px" height="192px" />
+                                </div>
+                                <div class="col-md-7">
+                                    <p style="text-align:left;font-size:smaller;"><span style="font-weight:bold;">Sentiment Analysis:</span>&nbsp;Helps Twitter understand opinions (good/bad sentiments) in Tweets, classify hashtags and text, and recognize named entities. Used to build better topic models, detect trends, categorize events.</p>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row fragment fade-in">
+                                <div class="col-md-5">
+                                    <img src="http://www.newscientist.com/blogs/onepercent/assets_c/2011/11/teaparty_larger-thumb-600x429-147401.jpg" alt="Twitter Clustering" width="320px" height="228px" />
+                                </div>
+                                <div class="col-md-7">
+                                    <p style="text-align:left;font-size:smaller;"><span style="font-weight:bold;">Clustering:</span>&nbsp;Helps Twitter with pattern recognition in news/information sources, finding user groups or segments, and suggesting similar users. Cluster analysis helps keep users interested in the community by revealing things they would likely be interested in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>How is Twitter doing as a business and What can they do better?</h3>
+                        <img src="http://wellbeingcenter.com/wp-content/uploads/2011/05/innovation-curve1.jpg" alt="Innovation Practices"/>
+                    </section>
+                    <section>
+                        <h3>The Business Side: TWTR</h3>
+                        <p style="padding-top:10px;">
+                        <!-- TradingView Widget BEGIN -->
+                        <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget({
+                          "width": 998,
+                          "height": 615,
+                          "symbol": "NYSE:TWTR",
+                          "interval": "D",
+                          "timezone": "EST",
+                          "theme": "White",
+                          "style": "1",
+                          "toolbar_bg": "#f1f3f6",
+                          "allow_symbol_change": true,
+                          "details": true,
+                          "news": [
+                            "headlines"
+                          ],
+                          "hideideas": true,
+                          "studies": [
+                            "MAExp@tv-basicstudies",
+                            "BB@tv-basicstudies"
+                          ]
+                        });
+                        </script>
+                        <!-- TradingView Widget END -->
+                        </p>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>2015 Q1 revenue of $436M (below expected $450M)</li>
+                            <li>2015 Q1 net loss of <span style="color:#c7254e;">$162M</span></li>
+                            <li>2015 Q1 GAAP Earnings Per Share of <span style="color:#c7254e;">($0.25)</span></li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <q cite="http://artsbeat.blogs.nytimes.com/2015/04/26/silicon-valley-recap-season-2-russ-hanneman/">
+                        It's not about how much you earn, but what you're worth. And who's worth the most? Companies that lose money.
+                        <br/>
+                        - Silicon Valley, "Bad Money"
+                        </q>
+                    </section>
+                    <section>
+                        <h3>Improving Innovation Analytics</h3>
+                        <p style="padding-top:15px;text-align:left;"><span style="color:#2a78de;">Open Innovation:</span>&nbsp;Developers are your friends.</p>
+                        <ul class="fragment fade-in fa-ul" style="padding-top:10px;text-align:left;list-style-type:none;" data-fragment-index="1">
+                            <li><i class="fa-li fa fa-thumbs-o-down fa-lg"></i>Twitter has a historically shaky relationship with developers as a result of strict rules and minimal support.</li>
+                            <br/>
+                            <li><i class="fa-li fa fa-thumbs-o-up fa-lg"></i>Encourage developers to use Twitter services in their apps.</li>
+                            <br/>
+                            <li><i class="fa-li fa fa-thumbs-o-up fa-lg"></i>Tune the API based on feedback from developers.</li>
+                            <br/>
+                            <li><i class="fa-li fa fa-thumbs-o-up fa-lg"></i>Jointly identify need areas in more optimal content delivery methods.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Fabric: A Step in the Right Direction</h3>
+                        <a href="http://www.sitepoint.com/introducing-fabric-twitters-mobile-development-platform/" target="_blank"><img src="http://siliconangle.com/files/2014/10/introducing-fabric.jpg" alt="Twitter Fabric" /></a>
+                    </section>
+                    <section>
+                        <h3>Improving Innovation Analytics</h3>
+                        <p style="padding-top:10px;color:#2a78de;">Less House of Cards, More House of Quality</p>
+                        <q class="fragment fade-in" data-fragment-index="1" style="padding-top:15px;" cite="https://medium.com/backchannel/the-circles-of-twitter-838f44fda4f">We’ve got to do a better job of organizing content experiences for people who don’t log into Twitter, but see Twitter content all the time - Twitter CEO</q>
+                        <p class="fragment fade-in" data-fragment-index="2" style="padding-top:15px;color:#2a78de;">Twitter is being seen, but its not engaging with the Voice of the Customer. USA is the main market for Twitter at the moment (and has the most overall users), but is only the fifth-most active country on Twitter after Kuwait, Netherlands, Brunei, and the UK.</p>
+                    </section>
+                    <section>
+                        <h3>Open Up the Data Firehose</h3>
+                        <img src="http://1g1uem2nc4jy1gzhn943ro0gz50.wpengine.netdna-cdn.com/wp-content/uploads/2009/01/freemium.jpg" alt="Freemium"/>
+                        <p style="padding-top:15px;">Utilize existing data streams and data warehouse to provide access to insightful data at a cost. Practical for B2B marketing organization wanting valuable user data and willing to pay for millions of API calls.</p>
+                    </section>
+                    <section>
+                        <h3>A Practical Example</h3>
+                        <img src="enigma.png" alt="Enigma Sample Pricing" />
+                    </section>
+                    <section>
+                        <h3>Emphasis on Image Processing</h3>
+                        <p style="padding-top:10px;color:#2a78de;text-align:left;">With image uploads, Vine, and Periscope - image and video processing is the future. Twitter should more strongly stress employee and business testing of image processing concepts to test adoption potential.</p>
+                        <img src="http://www.exuberantsolutions.com/images/schema.png" class="fragment fade-in" style="padding-top:10px;" alt="Image Processing"/>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                    <h3>Appendices</h3>
+                    <ul class="list-unstyled fa-ul" style="padding-top:25px;list-style-type:none;">
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="https://ieondemand.com/divisions/big-data/events/299/presentations/text-analytics-at-twitter" alt="Sources" target="_blank">The Changing Face of User Understanding: Text Mining, Deep Learning and Beyond - Alek Kolcz, Clement Farabet</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://www.inc.com/larry-kim/how-to-follow-your-customers-on-twitter-with-the-new-twitter-ads.html" alt="Sources" target="_blank">Everything You Need to Know About the New Twitter Ads</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://techcrunch.com/2015/04/11/twitter-cuts-off-datasift-to-step-up-its-own-b2b-big-data-analytics-business/#.xetrah:T0PH" alt="Sources" target="_blank">Twitter Cuts off DataSift To Step Up Its Own Big Data Business</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="https://medium.com/backchannel/the-circles-of-twitter-838f44fda4f" alt="Sources" target="_blank">#TWITTERNOMICS - The Circles of Twitter</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://techcrunch.com/2015/04/28/twitter-doubleclick-tellapart/#.xetrah:cAF7" alt="Sources" target="_blank">Twitter Improves Ads, Selling Them Through Google's DoubleClick</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://techcrunch.com/2013/09/09/twitter-said-to-acquire-mopub/" alt="Sources" target="_blank">Twitter Buys MoPub for $350M To Up Ante In Mobile Advertising</a></li>
+                    </ul>
+                    </section>
+                    <section>
+                    <h3>Appendices</h3>
+                    <ul class="list-unstyled fa-ul" style="padding-top:25px;list-style-type:none;">
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://www.adweek.com/socialtimes/twitter-ads-email-id/495603" alt="Sources" target="_blank">Twitter Ads: You Can Now Target Customers Via Their Email or Twitter ID</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="https://gigaom.com/2014/10/22/twitter-introduces-fabric-its-first-platform-for-mobile-app-developers/" alt="Sources" target="_blank">Twitter Introduces Fabric, it's first platform for mobile app developers</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://marketingland.com/meet-new-twitter-analytics-tools-twitter-113161" alt="Sources" target="_blank">Meet The New Twitter Analytics Tool</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="https://hbr.org/2010/04/twitter-ads-add-intrigue" alt="Sources" target="_blank">Twitter Ads Add Intrigue</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://www.csc.ncsu.edu/faculty/healey/tweet_viz/tweet_app/" alt="Sources" target="_blank">Twitter Sentiment Visualization</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://bits.blogs.nytimes.com/2013/09/13/5-reasons-that-innovation-at-twitter-might-take-a-hit/?_r=0" alt="Sources" target="_blank">5 Reasons That Innovation at Twitter Might Take a Hit</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://www.wsj.com/articles/SB10001424052702304441404579118531954483974" alt="Sources" target="_blank">Twitter's Data Business Proves Lucrative</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="http://www.forbes.com/sites/larrymyler/2014/09/05/innovation-culture-and-some-insights-from-twitter/" alt="Sources" target="_blank">Innovation, Culture And Some Insights From Twitter</a></li>
+                        <li><i class="fa-li fa fa-angle-right fa-lg"></i><a href="https://medium.com/enrique-dans/twitter-and-its-approach-to-innovation-42e2efee0de0" alt="Sources" target="_blank">Twitter and its Approach to Innovation</a></li>
+                    </ul>
+                    </section>
+                </section>
+                <section>
+                    <h3>Thank You For Your Time!</h3>
+                </section>
+
+            </div>
+        </div>
+
+        <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls : true,
+				progress : true,
+				history  : false,
+				center   : true,
+                touch    : true,
+                fragments: true,
+                viewDistance: 4,
+				theme      : Reveal.getQueryHash().theme,
+				transition : Reveal.getQueryHash().transition || 'linear',
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        			{ src: 'plugin/print-pdf/print-pdf.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+        <!-- I do not claim ownership of any images used for educational, public purposes. All rights reserved by their owners. Images assumed to come from public domain via Google. -->
+    </body>
+</html>
