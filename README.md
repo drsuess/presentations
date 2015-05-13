@@ -5,3 +5,4 @@ Current List Includes:
   - Twitter: Using Analytics to Innovate
   - Baltimore Crime Rate Prediction
   - Forecasting Android Adoption using the Bass Model
+  - Churn Prediction using Telecom Data
